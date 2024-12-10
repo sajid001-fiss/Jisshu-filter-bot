@@ -374,4 +374,4 @@ My Pampa : Sabakuno Gaara
 ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀʟʟ ᴅᴇᴛᴀɪʟs 
 ʙʏ /details ᴄᴏᴍᴍᴀɴᴅ
 </blockquote>
-Iғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴅᴏᴜʙᴛs ᴘʟᴇᴀsᴇ <a href="https://t.me/IMSASUKE7">ᴄᴏɴᴛᴀᴄᴛ</a> ᴍʏ <a href="https://t.me/IMSASUKE7">ᴀᴅᴍɪɴ</a></b>"""
+Iғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴅᴏᴜʙᴛs ᴘʟᴇᴀsᴇ <a href="https://t.me/IMSASUKE7">ᴄᴏɴᴛᴀᴄᴛ</a> ᴍʏ <a href="https://t.me/SandVillage1">ᴀᴅᴍɪɴ</a></b>"""
