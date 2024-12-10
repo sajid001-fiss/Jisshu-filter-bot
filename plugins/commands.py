@@ -190,8 +190,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
                             InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
-                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
+                            InlineKeyboardButton('ᴍᴏsᴛ sᴇᴀʀᴄʜ', callback_data="mostsearch"),
+                            InlineKeyboardButton('ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
                         m=await message.reply_sticker("CAACAgUAAxkBAAKPsGdYCV7BU4no1U1I_SMHYYTfeoxfAAIiEQAC1gNYVumN80HIEmv5NgQ") 
@@ -219,8 +219,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
                             InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
-                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
+                            InlineKeyboardButton('ᴍᴏsᴛ sᴇᴀʀᴄʜ', callback_data="mostsearch"),
+                            InlineKeyboardButton('ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAKPsGdYCV7BU4no1U1I_SMHYYTfeoxfAAIiEQAC1gNYVumN80HIEmv5NgQ") 
@@ -281,8 +281,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
                             InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
-                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
+                            InlineKeyboardButton('ᴍᴏsᴛ sᴇᴀʀᴄʜ', callback_data="mostsearch"),
+                            InlineKeyboardButton('ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
