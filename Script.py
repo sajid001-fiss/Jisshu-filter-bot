@@ -343,9 +343,9 @@ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀ�
 
     SOURCE_TXT = """<b>
 NOTE:
-- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<blockquote><a href="https://t.me/SandVillage1">𝗦𝗮𝗻𝗱 𝗙𝗶𝗹𝘁𝗲𝗿</a></blockquote>
+- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<blockquote><a href="https://t.me/SandVillage1">𝗦𝗮𝗻𝗱 𝗩𝗶𝗹𝗹𝗮𝗴𝗲</a></blockquote>
 
-developer : Mr.Jisshu
+My Pampa : Sabakuno Gaara
 </b>""" 
     GROUP_C_TEXT = """<b><blockquote>
  --------------Set Verify-------------
