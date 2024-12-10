@@ -21,7 +21,7 @@ async def save_group(bot, message):
             await bot.send_message(LOG_CHANNEL, script.NEW_GROUP_TXT.format(temp.B_LINK, message.chat.title, message.chat.id, message.chat.username, group_link, total, user), disable_web_page_preview=True)  
             await db.add_chat(message.chat.id, message.chat.title)
             btn = [[
-                InlineKeyboardButton('㊋ 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 ㊋'"https://t.me/SandVillage1)
+                InlineKeyboardButton('㊋ 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 ㊋',"https://t.me/SandVillage1)
             ]]
             reply_markup=InlineKeyboardMarkup(btn)
             await bot.send_message(
