@@ -93,7 +93,7 @@ async def start(client:Client, message):
         try:
             user_id = int(message.command[1].split("_")[1])
         except ValueError:
-            await message.reply_text("Iɴᴠᴀʟɪᴅ ʀᴇғᴇʀ⁉️")
+            await message.reply_text("ɪɴᴠᴀʟɪᴅ ʀᴇғᴇʀ⁉️")
             return
         if user_id == message.from_user.id:
             await message.reply_text("Hᴇʏ ᴅᴜᴅᴇ, ʏᴏᴜ ᴄᴀɴ ɴᴏᴛ ʀᴇғᴇʀ ʏᴏᴜʀsᴇʟғ⁉️")
@@ -134,7 +134,7 @@ async def start(client:Client, message):
         seen_ads = user.get("seen_ads", False)
         JISSHU_ADS_LINK = await db.jisshu_get_ads_link()
         buttons = [[
-                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
+                    InlineKeyboardButton('᪥ ᴄʟᴏꜱᴇ ᪥', callback_data='close_data')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if msg:
@@ -182,19 +182,19 @@ async def start(client:Client, message):
          #       newPoint = await db.get_point(refUserId)
              if AUTH_CHANNEL and await is_req_subscribed(client, message):
                         buttons = [[
-                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('᯽ ᴀᴅᴅ ᴍᴇ ᯽', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("᪥ ʜᴇʟᴘ ᪥", callback_data='features'),
+                            InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                            InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
+                            InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
+                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                        m=await message.reply_sticker("CAACAgQAAxkBAAEn9_ZmGp1uf1a38UrDhitnjOOqL1oG3gAC9hAAAlC74FPEm2DxqNeOmB4E") 
+                        m=await message.reply_sticker("CAACAgUAAxkBAAKPsGdYCV7BU4no1U1I_SMHYYTfeoxfAAIiEQAC1gNYVumN80HIEmv5NgQ") 
                         await asyncio.sleep(1)
                         await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -211,16 +211,16 @@ async def start(client:Client, message):
             pass
     if len(message.command) != 2:
         buttons = [[
-                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('᯽ ᴀᴅᴅ ᴍᴇ ᯽', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("᪥ ʜᴇʟᴘ ᪥", callback_data='features'),
+                            InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                            InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
+                            InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
+                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAKPsGdYCV7BU4no1U1I_SMHYYTfeoxfAAIiEQAC1gNYVumN80HIEmv5NgQ") 
@@ -273,16 +273,16 @@ async def start(client:Client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('᯽ ᴀᴅᴅ ᴍᴇ ᯽', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("᪥ ʜᴇʟᴘ ᪥", callback_data='features'),
+                            InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                            InlineKeyboardButton('᪥ ᴘʀᴇᴍɪᴜᴍ ᪥', callback_data='seeplans'),
+                            InlineKeyboardButton('᪥ ʀᴇғᴇʀ ᪥', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                            InlineKeyboardButton('᪥ ᴍᴏsᴛ sᴇᴀʀᴄʜ ᪥', callback_data="mostsearch"),
+                            InlineKeyboardButton('᪥ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ᪥', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -315,7 +315,7 @@ async def start(client:Client, message):
             else:
                 howtodownload = settings.get('tutorial_2', TUTORIAL_2) if is_second_shortener else settings.get('tutorial', TUTORIAL)
             buttons = [[
-                InlineKeyboardButton(text="✅ ᴠᴇʀɪғʏ ✅", url=verify),
+                InlineKeyboardButton(text="᪥ ᴠᴇʀɪғʏ ᪥", url=verify),
                 InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ❓", url=howtodownload)
                 ],[
                 InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='seeplans'),
@@ -340,7 +340,7 @@ async def start(client:Client, message):
         _, key = data.split("_", 1)
         files = temp.FILES_ID.get(key)
         if not files:
-            await message.reply_text("<b>⚠️ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ⚠️</b>")
+            await message.reply_text("<b>᪥ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ᪥</b>")
             return
         files_to_delete = []
         for file in files:
@@ -384,7 +384,7 @@ async def start(client:Client, message):
     files_ = await get_file_details(file_id)           
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
-        return await message.reply('<b>⚠️ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ⚠️</b>')
+        return await message.reply('<b>᪥ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ᪥</b>')
     files = files_[0]
     settings = await get_settings(grp_id , pm_mode=pm_mode)
     CAPTION = settings['caption']
