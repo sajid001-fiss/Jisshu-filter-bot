@@ -1026,7 +1026,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	
     elif query.data == "disclaimer":
             btn = [[
-                    InlineKeyboardButton("📲 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ ", user_id = ADMINS[0])
+                    InlineKeyboardButton("᯽ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ ᯽", user_id = ADMINS[0])
                ],[
                     InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
                   ]]
@@ -1048,7 +1048,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
           chat_id=query.message.chat.id,
           message_id=query.message.id,
           media=InputMediaAnimation(
-            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Group_20240921_202540_0001.gif",
+            media="https://ibb.co/vH5pBy4",
             caption=script.GROUP_TEXT.format(temp.B_LINK),
             parse_mode=enums.ParseMode.HTML
         ),
@@ -1111,7 +1111,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("reset_grp_data"):
         grp_id = query.message.chat.id
         btn = [[
-            InlineKeyboardButton('☕️ ᴄʟᴏsᴇ ☕️', callback_data='close_data')
+            InlineKeyboardButton('᪥ ᴄʟᴏsᴇ ᪥', callback_data='close_data')
         ]]           
         reply_markup=InlineKeyboardMarkup(btn)
         await save_group_settings(grp_id, 'shortner', SHORTENER_WEBSITE)
@@ -1161,7 +1161,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('ʀᴇsᴜʟᴛ ᴍᴏᴅᴇ', callback_data=f'setgs#link#{settings["link"]}#{str(grp_id)}'),
                 InlineKeyboardButton('⛓ ʟɪɴᴋ' if settings["link"] else '🧲 ʙᴜᴛᴛᴏɴ', callback_data=f'setgs#link#{settings["link"]}#{str(grp_id)}')
             ],[
-                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
+                InlineKeyboardButton('᪥ ᴄʟᴏsᴇ ᪥', callback_data='close_data')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             d = await query.message.edit_reply_markup(reply_markup)
